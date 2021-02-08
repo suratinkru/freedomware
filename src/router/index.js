@@ -7,6 +7,7 @@ import appLayout from '@/components/layouts/app-layout.vue'
 import adminLayout from '@/components/layouts/admin-layout.vue'
 
 import Login from '@/components/pages/login.vue'
+import Datatable from '../components/pages/testdatatable'
 import admindashboard from '@/components/pages/dashboards/admin-dashboard.vue'
 
 Vue.use(VueRouter);
@@ -57,8 +58,14 @@ const routes = [
         name: 'Dashboard',
         component: admindashboard
       },
+      {
+        path: '/datatable',
+        name: 'Datatable',
+        component: Datatable
+      },
     ]
   },
+ 
 ];
 
 const router = new VueRouter({
