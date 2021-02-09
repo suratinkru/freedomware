@@ -1,40 +1,34 @@
 <template>
   <div id="login">
- 	<!-- Loader -->
+ 	<!-- Loader 
 		<div id="global-loader">
-			<img src="" class="loader-img" alt="Loader">
+			<img src="@/assets/img/loader.svg" class="loader-img" alt="Loader">
 		</div>
-		<!-- /Loader -->
+		 /Loader -->
 
 		<div class="container-fluid">
 			<div class="row no-gutter">
 				<!-- The image half -->
-				<div class="col-md-6 col-lg-6 col-xl-7 d-none d-md-flex bg-primary-transparent">
-					<div class="row wd-100p mx-auto text-center">
-						<div class="col-md-12 col-lg-12 col-xl-12 my-auto mx-auto wd-100p">
-							<img src="" class="my-auto ht-xl-80p wd-md-100p wd-xl-80p mx-auto" alt="logo">
-						</div>
-					</div>
-				</div>
+		
 				<!-- The content half -->
-				<div class="col-md-6 col-lg-6 col-xl-5">
+				<div class="col-md-12 col-lg-12 col-xl-12">
 					<div class="login d-flex align-items-center py-2">
 						<!-- Demo content-->
 						<div class="container p-0">
 							<div class="row">
-								<div class="col-md-10 col-lg-10 col-xl-9 mx-auto">
+								<div class="col-md-8 col-lg-6 col-xl-5 mx-auto">
 									<div class="card-sigin">
-										<div class="mb-5 d-flex"> <a href="index.html"><img src="" class="sign-favicon ht-40" alt="logo"></a><h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Mi<span>nt</span>ro</h1></div>
+										<div class="mb-5  text-center"> <a href="index.html"><img src="../../assets/img/brand/logo.png" class="sign-favicon ht-40" alt="logo"></a><h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Mi<span>nt</span>ro</h1></div>
 										<div class="card-sigin">
 											<div class="main-signup-header">
-												<h2>Welcome back!</h2>
-												<h5 class="font-weight-semibold mb-4">Please sign in to continue.</h5>
-												<form action="page-profile.html">
+												<!-- <h2 class="text-center">Freedomware 1.0.1</h2>
+												<h5 class="font-weight-semibold mb-4 text-center">supercar</h5> -->
+												<form v-on:submit.prevent="login">
 													<div class="form-group">
-														<label>Email</label> <input class="form-control" placeholder="Enter your email" type="text">
+														<label>Email</label> <input  v-model="email" class="form-control" placeholder="Enter your email" type="text">
 													</div>
 													<div class="form-group">
-														<label>Password</label> <input class="form-control" placeholder="Enter your password" type="password">
+														<label>Password</label> <input  v-model="password" class="form-control" placeholder="Enter your password" type="password">
 													</div><button class="btn btn-main-primary btn-block">Sign In</button>
 													<div class="row row-xs">
 														<div class="col-sm-6">
@@ -67,29 +61,31 @@
 export default {
   data() {
     return {
-      username: "",
+      email: "",
       password: "",
       role: "",
     };
   },
   methods: {
-    // async login() {
-    //   try {
-    //     const loginForm = {
-    //       username: this.username,
-    //       password: this.password,
-    //     };
+    async login() {
+      try {
+        const loginForm = {
+          email: this.email,
+          password: this.password,
+        };
+
+		console.log("loginForm:",loginForm);
     
-    //     const resp = await authService.loginAdmin(loginForm);
-    //     localStorage.setItem("access_token", resp.access_token);
-    //     sessionStorage.setItem("role", resp.role);
-    //     this.$router.push('/dashboard');
+        // const resp = await authService.loginAdmin(loginForm);
+        // localStorage.setItem("access_token", resp.access_token);
+        // sessionStorage.setItem("role", resp.role);
+        this.$router.push('/dashboard');
         
-    //   } catch (error) {
-    //      this.$swal(error.response.data.error.message)
+      } catch (error) {
+         this.$swal(error.response.data.error.message)
    
-    //   }
-    // },
+      }
+    },
   },
 };
 </script>

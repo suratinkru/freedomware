@@ -1,8 +1,8 @@
 <template>
   <div id="backend">
-   		<div id="global-loader">
+   		<!-- 	<div id="global-loader">
 			<img src="@/assets/img/loader.svg" class="loader-img" alt="Loader">
-		</div>
+		</div> -->
   
       <Sidebar />
       		<!-- main-content -->
