@@ -13,6 +13,7 @@
           <router-view></router-view>
      
         </div>
+        <SidebarRight/>
         <Footer />
 
   </div>
@@ -21,6 +22,7 @@
 <script>
 import Header from "./../shared/header";
 import Sidebar from "./../shared/sidebar";
+import SidebarRight from "./../shared/sidebar-right";
 import Footer from "./../shared/footer";
 export default {
   name: "backend",
@@ -28,6 +30,7 @@ export default {
     Header,
     Sidebar,
     Footer,
+    SidebarRight
   },
 };
 </script>
