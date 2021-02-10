@@ -4,17 +4,23 @@
 			<img src="@/assets/img/loader.svg" class="loader-img" alt="Loader">
 		</div> -->
   
-      <Sidebar />
+    	<div class="wrapper">
       		<!-- main-content -->
-		<div class="main-content app-content">
+
            <Header />
+                 <Sidebar />
+           	<div class="main-panel">
+      
     
       
           <router-view></router-view>
+    
+
+               <Footer />
+             </div>
      
-        </div>
-        <SidebarRight/>
-        <Footer />
+      </div>
+      
 
   </div>
 </template>
@@ -22,7 +28,7 @@
 <script>
 import Header from "./../shared/header";
 import Sidebar from "./../shared/sidebar";
-import SidebarRight from "./../shared/sidebar-right";
+
 import Footer from "./../shared/footer";
 
 export default {
@@ -31,7 +37,7 @@ export default {
     Header,
     Sidebar,
     Footer,
-    SidebarRight
+
   },
 };
 </script>
