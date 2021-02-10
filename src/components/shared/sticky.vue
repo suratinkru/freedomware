@@ -1,9 +1,8 @@
 <template>
     <div>
-  
-			<!--Horizontal-main -->
+       		<!--Horizontal-main -->
 		<div class="sticky">
-			<div class="horizontal-main hor-menu clearfix side-header">
+			<div class="horizontal-main hor-menu clearfix side-header fixed-top">
 				<div class="horizontal-mainwrapper container clearfix">
 					<!--Nav-->
 					<nav class="horizontalMenu clearfix">
@@ -175,7 +174,6 @@
 				</div>
 			</div>
 		</div>
-		<!--Horizontal-main -->
-
+		<!--Horizontal-main --> 
     </div>
 </template>

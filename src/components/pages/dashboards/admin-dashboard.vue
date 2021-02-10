@@ -1,7 +1,10 @@
 <template>
     <div>
-    <!-- container -->
-			<div class="container-fluid">
+<!-- main-content opened -->
+		<div class="main-content horizontal-content">
+
+			<!-- container opened -->
+			<div class="container">
 
 				<!-- breadcrumb -->
 				<div class="breadcrumb-header justify-content-between">
@@ -295,7 +298,7 @@
 								<h3 class="card-title mb-2">Recent Orders</h3>
 								<p class="tx-12 mb-0 text-muted">An order is an investor's instructions to a broker or brokerage firm to purchase or sell</p>
 							</div>
-							<div class="card-body sales-info ot-0 pb-0 pt-0">
+							<div class="card-body sales-info ot-0 pt-0 pb-0">
 								<div id="chart" class="ht-150"></div>
 								<div class="row sales-infomation pb-0 mb-0 mx-auto wd-100p">
 									<div class="col-md-6 col">
@@ -432,6 +435,8 @@
 				</div>
 				<!-- /row -->
 			</div>
-			<!-- /Container -->
+		</div>
+		<!-- Container closed -->
+
     </div>
 </template>

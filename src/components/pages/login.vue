@@ -18,7 +18,7 @@
 							<div class="row">
 								<div class="col-md-8 col-lg-6 col-xl-5 mx-auto">
 									<div class="card-sigin">
-										<div class="mb-5  text-center"> <a href="index.html"><img src="../../assets/img/brand/logo.png" class="sign-favicon ht-40" alt="logo"></a><h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Mi<span>nt</span>ro</h1></div>
+										<div class="mb-5  text-center"> <a href="index.html"><img src="../../assets/img/brand/logo.png" class="sign-favicon ht-40" alt="logo"></a></div>
 										<div class="card-sigin">
 											<div class="main-signup-header">
 												<!-- <h2 class="text-center">Freedomware 1.0.1</h2>

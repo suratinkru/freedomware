@@ -1,36 +1,36 @@
 <template>
-  <div id="backend">
-   		<!-- 	<div id="global-loader">
-			<img src="@/assets/img/loader.svg" class="loader-img" alt="Loader">
-		</div> -->
+  <div >
+
+
+		<!-- /Loader -->
+     <Header />
+     <Sticky />
   
-      <Sidebar />
-      		<!-- main-content -->
-		<div class="main-content app-content">
-           <Header />
-    
-      
+		<!-- main-content opened -->
+	
           <router-view></router-view>
-     
-        </div>
-        <SidebarRight/>
-        <Footer />
+
+
+   
+        <Footer /> 
 
   </div>
 </template>
 
 <script>
-import Header from "./../shared/header";
-import Sidebar from "./../shared/sidebar";
-import SidebarRight from "./../shared/sidebar-right";
+import Header from "../shared/header";
+// import Sidebar from "./../shared/sidebar";
+// import SidebarRight from "./../shared/sidebar-right";
 import Footer from "./../shared/footer";
+import Sticky from "./../shared/sticky";
 export default {
-  name: "backend",
+  name: "",
   components: {
     Header,
-    Sidebar,
+    Sticky,
+    // Sidebar,
     Footer,
-    SidebarRight
+    // SidebarRight
   },
 };
 </script>
