@@ -4,7 +4,7 @@
 		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
-					<div class="user">
+					<!-- <div class="user">
 						<div class="avatar-sm float-left mr-2">
 							<img src="../../assets/img/logo.png" alt="..." class="avatar-img rounded-circle">
 						</div>
@@ -39,63 +39,15 @@
 								</ul>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<ul class="nav nav-primary">
 						<li class="nav-item active">
-							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+							  <router-link to="/dashboard"  class="nav-item">
 								<i class="fas fa-home"></i>
-								<p>Dashboard</p>
+								<p>Dashboard </p>
 							
-							</a>
-							<div class="collapse" id="dashboard">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="../demo1/index.html">
-											<span class="sub-item">Dashboard 1</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo2/index.html">
-											<span class="sub-item">Dashboard 2</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo3/index.html">
-											<span class="sub-item">Dashboard 3</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo4/index.html">
-											<span class="sub-item">Dashboard 4</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo5/index.html">
-											<span class="sub-item">Dashboard 5</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo6/index.html">
-											<span class="sub-item">Dashboard 6</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo7/index.html">
-											<span class="sub-item">Dashboard 7</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo8/index.html">
-											<span class="sub-item">Dashboard 8</span>
-										</a>
-									</li>
-									<li>
-										<a href="../demo9/index.html">
-											<span class="sub-item">Dashboard 9</span>
-										</a>
-									</li>
-								</ul>
-							</div>
+						 </router-link>
+					
 						</li>
 						<li class="nav-section">
 							<span class="sidebar-mini-icon">
@@ -112,9 +64,9 @@
 							<div class="collapse" id="base">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="components/avatars.html">
+										    <a href="/factor-analysis"  class="nav-item">
 											<span class="sub-item">วิเคราะห์ปัจจัย</span>
-										</a>
+										    </a>
 									</li>
 							
 								</ul>
@@ -122,7 +74,7 @@
 						</li>
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#sidebarLayouts">
-								<i class="fas fa-th-list"></i>
+							<i class="fas fa-car-crash"></i>
 								<p>ทะเบียนรถยนต์</p>
 								<span class="caret"></span>
 							</a>
@@ -205,7 +157,7 @@
 						</li>
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#tables">
-								<i class="fas fa-table"></i>
+							<i class="fas fa-wrench"></i>
 								<p>ตั้งค่ารถยนต์</p>
 								<span class="caret"></span>
 							</a>
@@ -255,12 +207,12 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a data-toggle="collapse" href="#maps">
-								<i class="fas fa-map-marker-alt"></i>
+							<a data-toggle="collapse" href="#settingdata">
+							<i class="fas fa-sliders-h"></i>
 								<p> ตั้งค่าปัจจัยวิเคราะห์</p>
 								<span class="caret"></span>
 							</a>
-							<div class="collapse" id="maps">
+							<div class="collapse" id="settingdata">
 								<ul class="nav nav-collapse">
 									<li>
 										<a href="maps/googlemaps.html">
@@ -313,7 +265,7 @@
 						</li>
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#charts">
-								<i class="far fa-chart-bar"></i>
+						<i class="fas fa-users"></i>
 								<p> จัดการพนักงาน</p>
 								<span class="caret"></span>
 							</a>
@@ -336,6 +288,102 @@
 									</li>
 								</ul>
 							</div>
+						</li>
+
+
+							<li class="nav-item">
+							<a data-toggle="collapse" href="#maps">
+								<i class="fas fa-map-marker-alt"></i>
+								<p>แผนที่</p>
+							
+							</a>
+							<!-- <div class="collapse" id="maps">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="maps/googlemaps.html">
+											<span class="sub-item"> ========== </span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</div> -->
+						</li>
+
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#report">
+							<i class="far fa-chart-bar"></i>
+								<p>รายงาน</p>
+								
+							</a>
+							<!-- <div class="collapse" id="report">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="maps/googlemaps.html">
+											<span class="sub-item"> ========== </span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</div> -->
+						</li>
+
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#accounting">
+								<i class="far fa-user-circle"></i>
+								<p>บัญชีเบื้องต้น</p>
+								
+							</a>
+							<!-- <div class="collapse" id="accounting">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="maps/googlemaps.html">
+											<span class="sub-item"> ========== </span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</div> -->
+						</li>
+
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#web">
+							<i class="fab fa-weebly"></i>
+								<p>เว็บไซต์บริษัท</p>
+							
+							</a>
+							<!-- <div class="collapse" id="web">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="maps/googlemaps.html">
+											<span class="sub-item"> ========== </span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</div> -->
+						</li>
+
+								<li class="nav-item">
+							<a data-toggle="collapse" href="#setting">
+								<i class="fas fa-cogs"></i>
+								<p>ตั้งค่าระบบ</p>
+							
+							</a>
+							<!-- <div class="collapse" id="setting">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="maps/googlemaps.html">
+											<span class="sub-item"> ========== </span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</div> -->
 						</li>
 				
 					</ul>
@@ -384,10 +432,66 @@ export default {
   },
   methods: {
     
-   
+ 
  
   },
   computed: {},
 };
 </script>
-<style></style>
+<style >
+ .sidebar, .sidebar[data-background-color="white"] {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    margin-top: 62px;
+    display: block;
+    z-index: 1000;
+    color: #ffffff;
+    font-weight: 200;
+	background-image: url(//www.gstatic.com/mobilesdk/190424_mobilesdk/nav_nachos@2x.png);
+    background-color: #232323;
+    -webkit-box-shadow: 4px 4px 10px rgb(69 65 78 / 6%);
+    -moz-box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
+    box-shadow: 4px 4px 10px rgb(69 65 78 / 6%);
+    transition: all .3s;
+}
+.sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.active > a {
+    background: #005884  !important;
+    box-shadow: 4px 4px 10px 0 rgb(0 0 0 / 10%), 4px 4px 15px -5px rgb(21 114 232 / 40%);
+}
+
+.sidebar .nav .nav-section .text-section, .sidebar[data-background-color="white"] .nav .nav-section .text-section {
+    padding: 2px 30px;
+    font-size: 12px;
+    color: #d8d8d8;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.sidebar .nav > .nav-item a p, .sidebar[data-background-color="white"] .nav > .nav-item a p {
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    white-space: nowrap;
+    color: #c3c3c3;
+}
+.sidebar.sidebar-style-2 .nav .nav-item a:hover p, .sidebar.sidebar-style-2 .nav .nav-item a:hover i, .sidebar.sidebar-style-2 .nav .nav-item a:focus p, .sidebar.sidebar-style-2 .nav .nav-item a:focus i, .sidebar.sidebar-style-2 .nav .nav-item a[data-toggle=collapse][aria-expanded=true] p, .sidebar.sidebar-style-2 .nav .nav-item a[data-toggle=collapse][aria-expanded=true] i {
+    color: #e6e6e6 !important;
+}
+.sidebar .nav > .nav-item a, .sidebar[data-background-color="white"] .nav > .nav-item a {
+    display: flex;
+    align-items: center;
+    color: #ebefff;
+    padding: 6px 25px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 3px;
+}
+</style>

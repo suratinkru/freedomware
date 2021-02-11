@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { baseURL } from './api';
 export default {
-  loginAdmin(credentials) {
-   
+  login(credentials) {
+   console.log("create:",credentials);
     return axios
-      .post(baseURL + '/admin/login', credentials)
+      .post(baseURL + '/v1/user/login', credentials)
       .then(response => response.data);
   },
   loginAgent(credentials) {

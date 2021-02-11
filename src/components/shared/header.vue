@@ -4,9 +4,9 @@
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
 				
-				<a href="index.html" class="logo">
-					<img src="../../assets/img/logo.png" alt="navbar brand" class="navbar-brand">
-				</a>
+			  <router-link to="/dashboard"  class="nav-item">
+					<img src="../../assets/img/logo.png" alt="navbar brand" class="navbar-brand img-fluid">
+			 </router-link>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
 						<i class="icon-menu"></i>
@@ -266,7 +266,7 @@
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#">Account Setting</a>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Logout</a>
+										<button class="dropdown-item" @click="logout" >Logout</button>
 									</li>
 								</div>
 							</ul>
@@ -278,3 +278,36 @@
 		</div>
     </div>
 </template>
+
+<script>
+export default {
+
+	  methods:{
+       logout() {
+      
+      const removeToken = localStorage.removeItem("access_token");
+	      this.$router.push("/login");
+    //   if (removeToken == null) {
+    //     if(sessionStorage.getItem("role") == 'admin'){
+            
+    //     this.$router.push("/login");
+    //     // sessionStorage.removeItem("role");
+    //     }else{
+    //        this.$router.push("/loginagent");
+    //         // sessionStorage.removeItem("role");
+    //     }
+     
+    //   }
+    },
+   }
+}
+</script>
+
+<style scoped>
+.logo-header[data-background-color="blue"] {
+    background: #232323 !important;
+}
+.navbar-header[data-background-color="blue2"] {
+    background: #232323 !important;
+}
+</style>

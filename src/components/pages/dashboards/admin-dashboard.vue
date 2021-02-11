@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-				<div class="panel-header bg-primary-gradient">
+				<div class="panel-header bg-s">
 					<div class="page-inner py-5">
 						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 							<div>

@@ -1,4 +1,4 @@
-const path='http://localhost:4000/';
+const path='http://139.59.250.31:5000/';
 module.exports = {
     baseURL: `${path}api`,
   };
