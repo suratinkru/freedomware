@@ -11,6 +11,7 @@ import Datatable from '../components/pages/testdatatable'
 import admindashboard from '@/components/pages/dashboards/admin-dashboard.vue'
 import Factoranalysis from '../components/pages/analyzes/factor-analysis.vue'
 import Carregistration from '../components/pages/car-registration/vehicle-registration-information'
+import Quarterlyregistration from '../components/pages/car-registration/quarterly-vehicle-registration-information'
 
 Vue.use(VueRouter);
 
@@ -95,6 +96,12 @@ const routes = [
         path: '/vehicle-registration-information',
         name: 'vehicle-registration-information', beforeEnter : guardMyroute,
         component: Carregistration
+      },
+
+      {
+        path: '/quarterly-vehicle-registration-information',
+        name: 'quarterly-vehicle-registration-information', beforeEnter : guardMyroute,
+        component: Quarterlyregistration
       },
 
    

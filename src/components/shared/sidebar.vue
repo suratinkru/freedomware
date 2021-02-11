@@ -4,42 +4,7 @@
 		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
-					<!-- <div class="user">
-						<div class="avatar-sm float-left mr-2">
-							<img src="../../assets/img/logo.png" alt="..." class="avatar-img rounded-circle">
-						</div>
-						<div class="info">
-							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-								<span>
-								Proliance
-
-									<span class="user-level">อำนาจในการซื้อ</span>
-									<span class="caret"></span>
-								</span>
-							</a>
-							<div class="clearfix"></div>
-
-							<div class="collapse in" id="collapseExample">
-								<ul class="nav">
-									<li>
-										<a href="#profile">
-											<span class="link-collapse">My Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="#edit">
-											<span class="link-collapse">Edit Profile</span>
-										</a>
-									</li>
-									<li>
-										<a href="#settings">
-											<span class="link-collapse">Settings</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div> -->
+				
 					<ul class="nav nav-primary">
 						<li class="nav-item active">
 							  <router-link to="/dashboard"  class="nav-item">
@@ -86,7 +51,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="overlay-sidebar.html">
+										 <a href="/quarterly-vehicle-registration-information"  class="nav-item">
 											<span class="sub-item">ข้อมูลจดทะเบียนรถ ประจำไตรมาส</span>
 										</a>
 									</li>
