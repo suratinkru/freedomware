@@ -29,9 +29,11 @@
 							<div class="collapse" id="base">
 								<ul class="nav nav-collapse">
 									<li>
-										    <a href="/factor-analysis"  class="nav-item">
+									  <router-link to="/factor-analysis"  class="nav-item">
+										
 											<span class="sub-item">วิเคราะห์ปัจจัย</span>
-										    </a>
+										
+											 </router-link>
 									</li>
 							
 								</ul>
@@ -46,14 +48,16 @@
 							<div class="collapse" id="sidebarLayouts">
 								<ul class="nav nav-collapse">
 									<li>
-									 <a href="/vehicle-registration-information"  class="nav-item">
+									 <router-link to="/vehicle-registration-information"  class="nav-item">
+								
 											<span class="sub-item">ข้อมูลจดทะเบียนรถ</span>
-										</a>
+										 </router-link>
 									</li>
 									<li>
-										 <a href="/quarterly-vehicle-registration-information"  class="nav-item">
+									 <router-link to="/quarterly-vehicle-registration-information"  class="nav-item">
+										
 											<span class="sub-item">ข้อมูลจดทะเบียนรถ ประจำไตรมาส</span>
-										</a>
+										 </router-link>
 									</li>
 							
 								</ul>
