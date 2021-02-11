@@ -10,6 +10,7 @@ import Login from '@/components/pages/login.vue'
 import Datatable from '../components/pages/testdatatable'
 import admindashboard from '@/components/pages/dashboards/admin-dashboard.vue'
 import Factoranalysis from '../components/pages/analyzes/factor-analysis.vue'
+import Carregistration from '../components/pages/car-registration/vehicle-registration-information'
 
 Vue.use(VueRouter);
 
@@ -89,6 +90,14 @@ const routes = [
         name: 'factor-analysis', beforeEnter : guardMyroute,
         component: Factoranalysis
       },
+
+      {
+        path: '/vehicle-registration-information',
+        name: 'vehicle-registration-information', beforeEnter : guardMyroute,
+        component: Carregistration
+      },
+
+   
 
       
     ]

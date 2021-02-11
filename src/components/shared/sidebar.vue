@@ -81,7 +81,7 @@
 							<div class="collapse" id="sidebarLayouts">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="sidebar-style-1.html">
+									 <a href="/vehicle-registration-information"  class="nav-item">
 											<span class="sub-item">ข้อมูลจดทะเบียนรถ</span>
 										</a>
 									</li>

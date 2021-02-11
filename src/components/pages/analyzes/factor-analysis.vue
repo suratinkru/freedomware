@@ -388,7 +388,7 @@
 
 <script>
 
-let check ;
+
 export default {
   
 

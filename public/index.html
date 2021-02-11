@@ -123,6 +123,10 @@
 
 	<!-- Atlantis JS -->
 	<script src="./assets/js/atlantis.min.js"></script>
+		<!-- Moment JS -->
+	<script src="./assets/js/plugin/moment/moment.min.js"></script>
+
+	<script src="./assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
 
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="./assets/js/setting-demo.js"></script>
@@ -270,6 +274,49 @@
 
 		});
 	});
+</script>
+
+<script>
+
+	$('#datetime').datetimepicker({
+		format: 'MM/DD/YYYY H:mm',
+	});
+	$('#datepicker').datetimepicker({
+		format: 'MM/DD/YYYY',
+	});
+	$('#timepicker').datetimepicker({
+		format: 'h:mm A', 
+	});
+
+	$('#basic').select2({
+		theme: "bootstrap"
+	});
+
+	$('#multiple').select2({
+		theme: "bootstrap"
+	});
+
+	$('#multiple-states').select2({
+		theme: "bootstrap"
+	});
+
+	$('#tagsinput').tagsinput({
+		tagClass: 'badge-info'
+	});
+
+	$( function() {
+		$( "#slider" ).slider({
+			range: "min",
+			max: 100,
+			value: 40,
+		});
+		$( "#slider-range" ).slider({
+			range: true,
+			min: 0,
+			max: 500,
+			values: [ 75, 300 ]
+		});
+	} );
 </script>
 
 	</body>
