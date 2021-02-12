@@ -2,7 +2,7 @@ import axios from 'axios';
 import { baseURL } from './api';
 export default {
   login(credentials) {
-   console.log("create:",credentials);
+ 
     return axios
       .post(baseURL + '/v1/user/login', credentials)
       .then(response => response.data);

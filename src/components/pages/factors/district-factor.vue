@@ -2,7 +2,7 @@
   <div class="container">
     <div class="page-inner">
       <div class="page-header">
-        <h4 class="page-title">วิเคราะห์ปัจจัย</h4>
+        <h4 class="page-title">ข้อมูลปัจจัย</h4>
         <ul class="breadcrumbs">
           <li class="nav-home">
             <a href="#">
@@ -13,14 +13,12 @@
             <i class="flaticon-right-arrow"></i>
           </li>
           <li class="nav-item">
-            <a href="#"> วิเคราะห์</a>
+            <a href="#"> ปัจจัยตามตำบล</a>
           </li>
           <li class="separator">
             <i class="flaticon-right-arrow"></i>
           </li>
-          <li class="nav-item">
-            <a href="#"> วิเคราะห์ปัจจัย</a>
-          </li>
+      
         </ul>
       </div>
 
@@ -38,67 +36,19 @@
             </div>
             <div class="card-body">
               <div class="row" style="margin-bottom:5px;">
-                <div class="col-sm-1">ประจำไตรมาส</div>
-                <div class="col-sm-3">
-                  <div class="form-group input-group p-0">
-                    <select
-                      class="form-control select2"
-                      name="select14"
-                      id="select14"
-                      style="width:80px; padding-right:5px;"
-                    >
-                      <option value="" selected>ALL</option
-                      ><option value="1">Q1</option
-                      ><option value="2">Q2</option
-                      ><option value="3">Q3</option
-                      ><option value="4">Q4</option>
-                    </select>
-                    <select
-                      class="form-control select2"
-                      name="select15"
-                      id="select15"
-                      style="width:100px; padding-right:5px;"
-                    >
-                      <option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option
-                      ><option value="2564">2564</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-1">ประเภทรถยนต์</div>
-                <div class="col-sm-3">
-                  <select
-                    class="form-control select2"
-                    name="select10"
-                    id="select10"
-                    style="width:100%; padding-right:5px;"
-                  >
-                    <option value="1"
-                      >รถยนต์นั่งส่วนบุคคลไม่เกิน 7 คน (รย.1)</option
-                    >
-                  </select>
+                <div class="col-sm-1">วันที่บันทึก</div>
+                <div class="col-sm-2">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="datepicker-th1"
+                    value="12/2/2564"
+                  />
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-1">เลือกภูมิภาค</div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                   <select
                     class="form-control select2"
                     name="select11"
@@ -116,7 +66,7 @@
                   </select>
                 </div>
                 <div class="col-sm-1">เลือกจังหวัด</div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                   <div id="show_provinces">
                     <select
                       class="form-control select2"
@@ -219,25 +169,10 @@
                     </select>
                   </div>
                 </div>
-              </div>
-              <div class="row mt-1" style="">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-3">
-                  <select
-                    class="form-control select2"
-                    name="select13"
-                    id="select13"
-                    style="width:100%; padding-right:5px;"
-                  >
-                    <option value="" selected> Supervised Learning </option>
-                    <option value="" selected> Unsupervised Learning </option>
-                  </select>
-                </div>
-                <div class="col-sm-8 text-left">
+                <div class="col-sm-2 text-left">
                   <button class="btn btn-secondary btn-sm">
-                    <i class="la flaticon-repeat"></i> วิเคราะห์ข้อมูล
-                  </button>
-                  <!-- <button type="button" onClick="search_data($('#select11').val(),$('#select12').val(),$('#select13').val(),$('#select14').val(),$('#select15').val(),$('#select10').val());" class="btn btn-outline-info btn-block" style=" margin-left:20px;float:right;width:100px;">  วิเคราะห์ข้อมูล </button> -->
+                  <i class="la flaticon-repeat"></i> ค้นหา
+                </button>
                 </div>
               </div>
             </div>
@@ -261,8 +196,8 @@
                 >
                   <thead>
                     <tr>
-                      <th class="text-center">ที่</th>
-                      <th>ยี่ห้อรถ</th>
+                      <th width="50">ที่</th>
+                      <th>ปัจจัย</th>
                     </tr>
                   </thead>
                   <!-- <tfoot>
@@ -276,104 +211,49 @@
 												</tr>
 											</tfoot> -->
                   <tbody>
-                    <tr>
+                    <tr class="">
                       <td align="center">1</td>
-                      <td>ไม่ระบุ</td>
+                      <td>อำนาจในการซื้อ</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">2</td>
-                      <td>ALFA ROMEO</td>
+                      <td>ความหนาแน่นของประชากร</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">3</td>
-                      <td>ASTON MARTIN</td>
+                      <td>ศูนย์บริการรถยนต์</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">4</td>
-                      <td>AUDI</td>
+                      <td>จำนวนครัวเรือน</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">5</td>
-                      <td>AUSTIN</td>
+                      <td>สิ่งแวดล้อมทางกายภาพ</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">6</td>
-                      <td>ALFA</td>
+                      <td>นโยบายของรัฐบาล</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">7</td>
-                      <td>BENTLEY</td>
+                      <td>การส่งเสริมทางการตลาด</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">8</td>
-                      <td>BENZ</td>
+                      <td>ความคุ้มค่าตราสินค้า</td>
                     </tr>
 
-                    <tr>
+                    <tr class="">
                       <td align="center">9</td>
-                      <td>BMW</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">10</td>
-                      <td>BUICK</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">11</td>
-                      <td>CHEVROLET</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">12</td>
-                      <td>CHRYSLER</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">13</td>
-                      <td>CITROEN</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">14</td>
-                      <td>CHERY</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">15</td>
-                      <td>DAEWOO</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">16</td>
-                      <td>DAIHATSU</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">17</td>
-                      <td>DAIMLER</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">18</td>
-                      <td>DATSUN</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">19</td>
-                      <td>DODGE</td>
-                    </tr>
-
-                    <tr>
-                      <td align="center">20</td>
-                      <td>FERRARI</td>
+                      <td>การรับประกันรถยนต์</td>
                     </tr>
                   </tbody>
                 </table>
@@ -386,72 +266,65 @@
   </div>
 </template>
 
-
 <script>
-
-
 export default {
-  
+  mounted() {
+    $(document).ready(function() {
+      $("#basic-datatables").DataTable({});
 
-    
-mounted() {
- 	$(document).ready(function() {
-		$('#basic-datatables').DataTable({
-		});
+      $("#multi-filter-select").DataTable({
+        pageLength: 5,
+        initComplete: function() {
+          this.api()
+            .columns()
+            .every(function() {
+              var column = this;
+              var select = $(
+                '<select class="form-control"><option value=""></option></select>'
+              )
+                .appendTo($(column.footer()).empty())
+                .on("change", function() {
+                  var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
-		$('#multi-filter-select').DataTable( {
-			"pageLength": 5,
-			initComplete: function () {
-				this.api().columns().every( function () {
-					var column = this;
-					var select = $('<select class="form-control"><option value=""></option></select>')
-					.appendTo( $(column.footer()).empty() )
-					.on( 'change', function () {
-						var val = $.fn.dataTable.util.escapeRegex(
-							$(this).val()
-							);
+                  column.search(val ? "^" + val + "$" : "", true, false).draw();
+                });
 
-						column
-						.search( val ? '^'+val+'$' : '', true, false )
-						.draw();
-					} );
+              column
+                .data()
+                .unique()
+                .sort()
+                .each(function(d, j) {
+                  select.append('<option value="' + d + '">' + d + "</option>");
+                });
+            });
+        },
+      });
 
-					column.data().unique().sort().each( function ( d, j ) {
-						select.append( '<option value="'+d+'">'+d+'</option>' )
-					} );
-				} );
-			}
-		});
+      // Add Row
+      $("#add-row").DataTable({
+        pageLength: 5,
+      });
 
-		// Add Row
-		$('#add-row').DataTable({
-			"pageLength": 5,
-		});
+      var action =
+        '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
 
-		var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
-
-		$('#addRowButton').click(function() {
-			$('#add-row').dataTable().fnAddData([
-				$("#addName").val(),
-				$("#addPosition").val(),
-				$("#addOffice").val(),
-				action
-				]);
-			$('#addRowModal').modal('hide');
-
-		});
-	});
-
- 
-},
-methods:{
-
-     
-          // location.reload();
-      
-
-}
-}
+      $("#addRowButton").click(function() {
+        $("#add-row")
+          .dataTable()
+          .fnAddData([
+            $("#addName").val(),
+            $("#addPosition").val(),
+            $("#addOffice").val(),
+            action,
+          ]);
+        $("#addRowModal").modal("hide");
+      });
+    });
+  },
+  methods: {
+    // location.reload();
+  },
+};
 </script>
 
 <style scoped>
@@ -468,13 +341,14 @@ methods:{
   background-color: #ffffff;
 }
 
-.table td, .table th {
-    font-size: 14px;
-    border-top-width: 0px;
-    border-bottom: 1px solid;
-    border-color: #ebedf2 !important;
-    padding: 0 25px !important;
-    height: 20px;
-    vertical-align: middle !important;
+.table td,
+.table th {
+  font-size: 14px;
+  border-top-width: 0px;
+  border-bottom: 1px solid;
+  border-color: #ebedf2 !important;
+  padding: 0 25px !important;
+  height: 20px;
+  vertical-align: middle !important;
 }
 </style>

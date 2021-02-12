@@ -12,6 +12,9 @@ import admindashboard from '@/components/pages/dashboards/admin-dashboard.vue'
 import Factoranalysis from '../components/pages/analyzes/factor-analysis.vue'
 import Carregistration from '../components/pages/car-registration/vehicle-registration-information'
 import Quarterlyregistration from '../components/pages/car-registration/quarterly-vehicle-registration-information'
+import Districtfactor from '../components/pages/factors/district-factor.vue'
+import IndustryRegisterValue from '../components/pages/factors/industry-registration-value.vue'
+import CompanyRegisterValue from '../components/pages/factors/company-registration-value.vue'
 
 Vue.use(VueRouter);
 
@@ -103,6 +106,25 @@ const routes = [
         name: 'quarterly-vehicle-registration-information', beforeEnter : guardMyroute,
         component: Quarterlyregistration
       },
+
+      {
+        path: '/district-factor',
+        name: 'district-factor', beforeEnter : guardMyroute,
+        component: Districtfactor
+      },
+
+      {
+        path: '/industry-registration',
+        name: 'industry-registration', beforeEnter : guardMyroute,
+        component: IndustryRegisterValue
+      },
+      {
+        path: '/company-registration-value',
+        name: 'company-registration-value', beforeEnter : guardMyroute,
+        component: CompanyRegisterValue
+      },
+      
+
 
    
 

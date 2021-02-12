@@ -1,10 +1,44 @@
 <template>
-  <div >
+
 	<!-- Sidebar -->
 		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
-				
+				   <div class="user">
+						<div class="avatar-sm float-left mr-2">
+							<img src="https://via.placeholder.com/50" alt="..." class="avatar-img rounded-circle">
+						</div>
+						<div class="info">
+							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									Hizrian
+									<span class="user-level">Administrator</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample">
+								<ul class="nav">
+									<li>
+										<a href="#profile">
+											<span class="link-collapse">My Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#edit">
+											<span class="link-collapse">Edit Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#settings">
+											<span class="link-collapse">Settings</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+				   </div>
 					<ul class="nav nav-primary">
 						<li class="nav-item active">
 							  <router-link to="/dashboard"  class="nav-item">
@@ -72,19 +106,19 @@
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="forms/forms.html">
+										 <router-link to="/district-factor"  class="nav-item">
 											<span class="sub-item">ปัจจัยตามตำบล</span>
-										</a>
+										 </router-link>
 									</li>
 									<li>
-										<a href="forms/formvalidation.html">
+									 <router-link to="/industry-registration"  class="nav-item">
 											<span class="sub-item">มูลค่าจดทะเบียนอุตสาหกรรม</span>
-										</a>
+									 </router-link>
 									</li>
 									<li>
-										<a href="forms/formwidget.html">
+									   	 <router-link to="/company-registration-value"  class="nav-item">
 											<span class="sub-item">มูลค่าจดทะเบียนบริษัท</span>
-										</a>
+											 </router-link>
 									</li>
 									<li>
 										<a href="forms/formwizard.html">
@@ -361,7 +395,7 @@
 		</div>
 		<!-- End Sidebar -->
 
-  </div>
+
   
 </template>
 
@@ -409,22 +443,10 @@ export default {
 </script>
 <style >
  .sidebar, .sidebar[data-background-color="white"] {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 250px;
-    margin-top: 62px;
-    display: block;
-    z-index: 1000;
-    color: #ffffff;
-    font-weight: 200;
+ 
 	background-image: url(//www.gstatic.com/mobilesdk/190424_mobilesdk/nav_nachos@2x.png);
     background-color: #232323;
-    -webkit-box-shadow: 4px 4px 10px rgb(69 65 78 / 6%);
-    -moz-box-shadow: 4px 4px 10px rgba(69, 65, 78, 0.06);
-    box-shadow: 4px 4px 10px rgb(69 65 78 / 6%);
-    transition: all .3s;
+
 }
 .sidebar.sidebar-style-2 .nav.nav-primary > .nav-item.active > a {
     background: #005884  !important;

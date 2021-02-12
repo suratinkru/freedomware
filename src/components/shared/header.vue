@@ -1,12 +1,12 @@
 <template>
-    <div>
+ 
     	<div class="main-header">
 			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
 				
-			  <router-link to="/dashboard"  class="nav-item">
-					<img src="../../assets/img/logo.png" alt="navbar brand" class="navbar-brand img-fluid">
-			 </router-link>
+				<a href="/dashboard" class="logo">
+					<img src="../../assets/img/logo.png" alt="navbar brand" class="navbar-brand">
+				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
 						<i class="icon-menu"></i>
@@ -266,7 +266,7 @@
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#">Account Setting</a>
 										<div class="dropdown-divider"></div>
-										<button class="dropdown-item" @click="logout" >Logout</button>
+										<button class="dropdown-item" @click="logout">Logout</button>
 									</li>
 								</div>
 							</ul>
@@ -276,7 +276,7 @@
 			</nav>
 			<!-- End Navbar -->
 		</div>
-    </div>
+   
 </template>
 
 <script>
