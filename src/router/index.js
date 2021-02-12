@@ -15,6 +15,9 @@ import Quarterlyregistration from '../components/pages/car-registration/quarterl
 import Districtfactor from '../components/pages/factors/district-factor.vue'
 import IndustryRegisterValue from '../components/pages/factors/industry-registration-value.vue'
 import CompanyRegisterValue from '../components/pages/factors/company-registration-value.vue'
+import CartReport from '../components/pages/report/chart-report.vue'
+
+import CalendarEvent from '../components/pages/calendars/calendar.vue' //calendar-events
 
 Vue.use(VueRouter);
 
@@ -118,12 +121,27 @@ const routes = [
         name: 'industry-registration', beforeEnter : guardMyroute,
         component: IndustryRegisterValue
       },
+
       {
         path: '/company-registration-value',
         name: 'company-registration-value', beforeEnter : guardMyroute,
         component: CompanyRegisterValue
       },
+
+
+      {
+        path: '/chart-report',
+        name: 'chart-report', beforeEnter : guardMyroute,
+        component: CartReport
+      },
+
+      {
+        path: '/calendar-events',
+        name: 'calendar-events', beforeEnter : guardMyroute,
+        component: CalendarEvent
+      },
       
+
 
 
    
