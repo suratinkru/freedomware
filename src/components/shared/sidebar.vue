@@ -121,37 +121,37 @@
 											 </router-link>
 									</li>
 									<li>
-										<a href="forms/formwizard.html">
+										<a href="#">
 											<span class="sub-item">ศูนย์บริการรถยนต์</span>
 										</a>
 									</li>
 									<li>
-										<a href="forms/formupload.html">
+										<a href="#">
 											<span class="sub-item">จำนวนครัวเรือน</span>
 										</a>
 									</li>
 									<li>
-										<a href="forms/formwysiwyg.html">
+										<a href="#">
 											<span class="sub-item">ลักษณะของแต่ละพื้นที่</span>
 										</a>
 									</li>
 									<li>
-										<a href="forms/formwysiwyg.html">
+										<a href="#">
 											<span class="sub-item">นโยบายของรัฐบาล</span>
 										</a>
 									</li>
 									<li>
-										<a href="forms/formwysiwyg.html">
+										<a href="#">
 											<span class="sub-item">โปรโมชั่นการซื้อรถยนต์</span>
 										</a>
 									</li>
 									<li>
-										<a href="forms/formwysiwyg.html">
+										<a href="#">
 											<span class="sub-item">คุณค่าตราสินค้า</span>
 										</a>
 									</li>
 									<li>
-										<a href="forms/formwysiwyg.html">
+										<a href="#">
 											<span class="sub-item">การรับประกันรถยนต์</span>
 										</a>
 									</li>
@@ -167,42 +167,42 @@
 							<div class="collapse" id="tables">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="tables/tables.html">
+										<a href="#">
 											<span class="sub-item">รายการรถ</span>
 										</a>
 									</li>
 									<li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item">ประเภทรถยนต์</span>
 										</a>
 									</li>
 
 									<li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item"> ประเภทรถยนต์ในประเทศ </span>
 										</a>
 									</li><li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item"> TYPE</span>
 										</a>
 									</li><li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item"> MAKE MODEL</span>
 										</a>
 									</li><li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item"> BODYSTYLE</span>
 										</a>
 									</li><li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item"> SEGMENT</span>
 										</a>
 									</li><li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item"> VEHICLE TYPE</span>
 										</a>
 									</li><li>
-										<a href="tables/datatables.html">
+										<a href="#">
 											<span class="sub-item"> PRICE CLASS</span>
 										</a>
 									</li>
@@ -218,47 +218,47 @@
 							<div class="collapse" id="settingdata">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="maps/googlemaps.html">
+										<a href="#">
 											<span class="sub-item"> อำนาจในการซื้อ</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/fullscreenmaps.html">
+										<a href="#">
 											<span class="sub-item"> ความหนาแน่นของประชากร</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/jqvmap.html">
+										<a href="#">
 											<span class="sub-item"> ศูนย์บริการรถยนต์</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/jqvmap.html">
+										<a href="#">
 											<span class="sub-item">  จำนวนครัวเรือน</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/jqvmap.html">
+										<a href="#">
 											<span class="sub-item">  ลักษณะของแต่ละพื้นที่</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/jqvmap.html">
+										<a href="#">
 											<span class="sub-item">  นโยบายรัฐบาล</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/jqvmap.html">
+										<a href="#">
 											<span class="sub-item">  โปรโมชั่นการซื้อรถยนต์</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/jqvmap.html">
+										<a href="#">
 											<span class="sub-item">  คุณค่าตราสินค้า</span>
 										</a>
 									</li>
 									<li>
-										<a href="maps/jqvmap.html">
+										<a href="#">
 											<span class="sub-item">  การรับประกันรถยนต์</span>
 										</a>
 									</li>
@@ -275,17 +275,17 @@
 							<div class="collapse" id="charts">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="charts/charts.html">
+											 <router-link to="/employee"  class="nav-item">
 											<span class="sub-item"> พนักงาน</span>
-										</a>
+											 </router-link>
 									</li>
 									<li>
-										<a href="charts/sparkline.html">
+										 <router-link to="/privileges"  class="nav-item">
 											<span class="sub-item"> สิทธิ์ผู้ใช้งาน</span>
-										</a>
+										 </router-link>
 									</li>
 									<li>
-										<a href="charts/sparkline.html">
+										<a href="#">
 											<span class="sub-item">  ตำแหน่งงาน</span>
 										</a>
 									</li>

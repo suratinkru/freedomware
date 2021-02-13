@@ -29,12 +29,14 @@
       <!-- search -->
       <div class="card">
         <div class="card-header">
-          <button class="btn btn-info btn-sm mr-2">
+           <router-link to="/quarterly-vehicle-registration-information" class="btn btn-info btn-sm mr-2"> 
             <i class="fas fa-th-list"></i> แสดงรายการ
-          </button>
-          <button class="btn btn-success btn-sm mr-5">
+      </router-link>
+           <router-link to="/add-quarterly-vehicle-registration-information" class="btn btn-success btn-sm mr-5"> 
+       
             <i class="fas fa-plus-circle"></i> เพิ่มข้อมูลใหม่
-          </button>
+       
+           </router-link>
           <span class="text-right"
             >สถิติจำนวนรถใหม่ (ป้ายแดง) ที่จดทะเบียนโดยแยกยี่ห้อรถ</span
           >

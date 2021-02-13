@@ -29,12 +29,14 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header">
-              <button class="btn btn-info btn-sm mr-2">
+              <router-link to="/factor-analysis" class="btn btn-info btn-sm mr-2">  
                 <i class="fas fa-th-list"></i> แสดงรายการ
-              </button>
-              <button class="btn btn-success btn-sm">
+                 </router-link>
+            
+               <router-link to="/add-factor-analysis" class="btn btn-success btn-sm" >
                 <i class="fas fa-plus-circle"></i> เพิ่มข้อมูลใหม่
-              </button>
+               </router-link>
+            
             </div>
             <div class="card-body">
               <div class="row" style="margin-bottom:5px;">

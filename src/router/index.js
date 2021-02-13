@@ -10,14 +10,27 @@ import Login from '@/components/pages/login.vue'
 import Datatable from '../components/pages/testdatatable'
 import admindashboard from '@/components/pages/dashboards/admin-dashboard.vue'
 import Factoranalysis from '../components/pages/analyzes/factor-analysis.vue'
+import AddFactoranalysis from '../components/pages/analyzes/manages/add-factor-analysis.vue'
+
+
 import Carregistration from '../components/pages/car-registration/vehicle-registration-information'
+import AddCarregistration from '../components/pages/car-registration/manages/add-vehicle-registration-information.vue'
+
+
 import Quarterlyregistration from '../components/pages/car-registration/quarterly-vehicle-registration-information'
+import AddQuarterlyregistration from '../components/pages/car-registration/manages/add-quarterly-vehicle-registration-information.vue'
+
+
 import Districtfactor from '../components/pages/factors/district-factor.vue'
 import IndustryRegisterValue from '../components/pages/factors/industry-registration-value.vue'
 import CompanyRegisterValue from '../components/pages/factors/company-registration-value.vue'
 import CartReport from '../components/pages/report/chart-report.vue'
 
 import CalendarEvent from '../components/pages/calendars/calendar.vue' //calendar-events
+
+import Employee from '../components/pages/employees/employee.vue' //Employee
+import AddEmployee from '../components/pages/employees/manages/add-employee.vue' //Employee
+import Privilege from '../components/pages/employees/privileges.vue' //Employee
 
 Vue.use(VueRouter);
 
@@ -99,16 +112,39 @@ const routes = [
       },
 
       {
+        path: '/add-factor-analysis',
+        name: 'add-factor-analysis', beforeEnter : guardMyroute,
+        component: AddFactoranalysis
+      },
+  
+
+      {
         path: '/vehicle-registration-information',
         name: 'vehicle-registration-information', beforeEnter : guardMyroute,
         component: Carregistration
       },
 
       {
+        path: '/add-vehicle-registration-information',
+        name: 'add-vehicle-registration-information', beforeEnter : guardMyroute,
+        component: AddCarregistration
+      },
+      
+
+      {
         path: '/quarterly-vehicle-registration-information',
         name: 'quarterly-vehicle-registration-information', beforeEnter : guardMyroute,
         component: Quarterlyregistration
       },
+
+      
+      {
+        path: '/add-quarterly-vehicle-registration-information',
+        name: 'add-quarterly-vehicle-registration-information', beforeEnter : guardMyroute,
+        component: AddQuarterlyregistration
+      },
+
+      
 
       {
         path: '/district-factor',
@@ -140,6 +176,28 @@ const routes = [
         name: 'calendar-events', beforeEnter : guardMyroute,
         component: CalendarEvent
       },
+
+      //employees
+      {
+        path: '/employee',
+        name: 'employee', beforeEnter : guardMyroute,
+        component: Employee
+      },
+      {
+        path: '/add-employee',
+        name: 'add-employee', beforeEnter : guardMyroute,
+        component: AddEmployee
+      },
+      
+      //Privilege
+      {
+        path: '/privileges',
+        name: 'privileges', beforeEnter : guardMyroute,
+        component: Privilege
+      },
+
+      
+
       
 
 
